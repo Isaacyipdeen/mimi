@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    
+
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
@@ -16,8 +16,9 @@
     </div>
 
     <script>
-        $(window).on("load", setTimeout(function(){
-          $(".loader-wrapper").fadeOut("slow"), (3*1000));
+      setTimeout(3*1000)
+        $(window).on("load", function(){
+          $(".loader-wrapper").fadeOut("slow");
         });
     </script>
   </body>
