@@ -71,6 +71,13 @@ h3 {
   color: #111;
 }
 
+.topright {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
+}
+
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
   .bgimg-1, .bgimg-2, .bgimg-3 {
@@ -81,14 +88,14 @@ h3 {
 </head>
 <body>
 
-  <h2>Toggle Dark/Light Mode</h2>
-  <p>Click the button to toggle between dark and light mode for this page.</p>
 
-  <button onclick="myFunction()">Toggle dark mode</button>
+
+<button onclick="myFunction()">Toggle dark mode</button>
 
 <div class="bgimg-1">
   <div class="caption">
   <span class="border">SCROLL DOWN</span>
+  <div class="topright">Top Right</div>
   </div>
 </div>
 
