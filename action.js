@@ -5,5 +5,5 @@ function myFunction() {
 
 
 function replacepage() {
-  window.location.replace("hi.html")
+  window.location.replace("https://mimibirthday.ga/hi.html")
 }
