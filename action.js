@@ -5,5 +5,5 @@ function myFunction() {
 
 
 function replacepage() {
-  window.location.replace("https://www.w3schools.com")
+  window.location.replace("hi.html")
 }
