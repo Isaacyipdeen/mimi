@@ -1,63 +1,49 @@
-<style>
-body, html {
-  height: 100%;
+/* scrollbar starts on line 31 */
+
+/* fonts and basic setup */
+* {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.5;
+  box-sizing: border-box;
+  color: #44585d;
+}
+body {
+  height: 100vh;
+  background-color: #ecf0f1;
+  padding: 1.5rem;
   margin: 0;
-  font: 400 15px/1.8 "Lato", sans-serif;
-  color: #777;
 }
-
-.bgimg-1, .bgimg-2, .bgimg-3 {
-  position: relative;
-  opacity: 0.65;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-}
-.bgimg-1 {
-  background-image: url("img_parallax.jpg");
-  min-height: 100%;
+.container {
+  background-color: #fdfdfd;
+  height: 100%;
   width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 4px 28px rgba(123,151,158,.25);
+  border: 1px solid #d6dee1;
+  padding: 1rem;
+  overflow: scroll;
 }
-
-.bgimg-2 {
-  background-image: url("img_parallax2.jpg");
-  min-height: 400px;
-}
-
-.bgimg-3 {
-  background-image: url("img_parallax3.jpg");
-  min-height: 400px;
-}
-
-.caption {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 100%;
+h1 {
+  margin: 0;
   text-align: center;
-  color: #000;
 }
 
-.caption span.border {
-  background-color: #111;
-  color: #fff;
-  padding: 18px;
-  font-size: 25px;
-  letter-spacing: 10px;
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: 20px;
 }
 
-h3 {
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font: 20px "Lato", sans-serif;
-  color: #111;
+::-webkit-scrollbar-track {
+  background-color: transparent;
 }
 
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: scroll;
-  }
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
 }
