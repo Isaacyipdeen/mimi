@@ -97,9 +97,9 @@ body {
   display: inline-block;
   width: 90vw;
   max-width: 400px;
-  height: 70vh;
-  background: #FFFFFF;
-  padding-bottom: 40px;
+  height: 60vh;
+  background-color: transparent;
+
   border-radius: 8px;
   overflow: hidden;
   position: absolute;
@@ -115,9 +115,22 @@ body {
   cursor: grabbing;
 }
 
+.tinder--card:not(:first-child) {
+  backdrop-filter: blur(6px); /* Adjust the blur intensity as needed */
+}
+
+.tinder--card video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+
+}
 .tinder--card img {
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
   pointer-events: none;
+  object-fit: contain;
 }
 
 .tinder--card h3 {
@@ -187,27 +200,26 @@ body {
     <div class="tinder--card">
       <img src="img/mimi.png">
 
-      <p>This is a demo for Tinder like swipe cards</p>
+
     </div>
     <div class="tinder--card">
       <img src="img/minyi.png">
-      <h3>Demo card 2</h3>
-      <p>This is a demo for Tinder like swipe cards</p>
+
     </div>
     <div class="tinder--card">
       <img src="img/1.jpg">
-      <h3>Demo card 3</h3>
-      <p>This is a demo for Tinder like swipe cards</p>
+
     </div>
     <div class="tinder--card">
-      <img src="img/2.mp4">
-      <h3>Demo card 4</h3>
-      <p>This is a demo for Tinder like swipe cards</p>
+      <video controls>
+        <source src="img/2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
     </div>
     <div class="tinder--card">
       <img src="img/3.jpg">
-      <h3>Demo card 5</h3>
-      <p>This is a demo for Tinder like swipe cards</p>
+
     </div>
   </div>
 
